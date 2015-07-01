@@ -65,7 +65,6 @@ function KingOfTheHillGameMode:InitTeams()
 	GameRules:SetPreGameTime( 5 )
 	GameRules:SetHideKillMessageHeaders( true )
 	GameRules:GetGameModeEntity():SetLoseGoldOnDeath( false )
-	CustomNetTables:SetTableValue( "game_state", "victory_condition", { kills_to_win = self.TEAM_KILLS_TO_WIN } );
 
 	self.m_Teams = {}
 	self.m_Teams[DOTA_TEAM_GOODGUYS] = {id = DOTA_TEAM_GOODGUYS, score = 0}
